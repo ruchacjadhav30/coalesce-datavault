@@ -1,0 +1,197 @@
+fileVersion: 1
+id: 4a3ac71f-261b-4ef4-8eec-802bb34ba23f
+name: DVSTG_PART
+operation:
+  config:
+    contains_multiactive_data: false
+    generate_ghost_records: true
+  database: ""
+  deployEnabled: true
+  description: Part data as defined by TPC-H
+  isMultisource: false
+  locationName: TARGET
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b8b33e5f-baa8-4667-ad50-6c0e6fecc2a9
+          stepCounter: 4a3ac71f-261b-4ef4-8eec-802bb34ba23f
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: P_PARTKEY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a4576518-0dd5-45cc-95d9-42935ce65758
+                stepCounter: fdefaa1c-72fc-4da7-936f-4274fd2ad8ad
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d7f4e45d-62a0-44af-b038-cdfd7201f3b8
+          stepCounter: 4a3ac71f-261b-4ef4-8eec-802bb34ba23f
+        config: {}
+        dataType: VARCHAR(55)
+        description: ""
+        name: P_NAME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5594c496-c4f3-448f-b4a3-d02f88555805
+                stepCounter: fdefaa1c-72fc-4da7-936f-4274fd2ad8ad
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 303c677f-8251-4682-a791-40616a357017
+          stepCounter: 4a3ac71f-261b-4ef4-8eec-802bb34ba23f
+        config: {}
+        dataType: VARCHAR(25)
+        description: ""
+        name: P_MFGR
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7ed9686e-c241-419b-ac70-d5729df531eb
+                stepCounter: fdefaa1c-72fc-4da7-936f-4274fd2ad8ad
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bdb54b4c-7d0b-4e43-93bf-72d25b543e1e
+          stepCounter: 4a3ac71f-261b-4ef4-8eec-802bb34ba23f
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: P_BRAND
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3ac7a939-fe98-439b-8c50-08ab786f204a
+                stepCounter: fdefaa1c-72fc-4da7-936f-4274fd2ad8ad
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 761be84e-3f3d-472d-ae83-e65876121ffc
+          stepCounter: 4a3ac71f-261b-4ef4-8eec-802bb34ba23f
+        config: {}
+        dataType: VARCHAR(25)
+        description: ""
+        name: P_TYPE
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0438cea3-ef83-44ee-ac24-a0b3742a7d74
+                stepCounter: fdefaa1c-72fc-4da7-936f-4274fd2ad8ad
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 852102ba-c71e-465a-b2c2-a2c2d3c2f8af
+          stepCounter: 4a3ac71f-261b-4ef4-8eec-802bb34ba23f
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: P_SIZE
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1e1f429e-3461-46c7-96a4-ffcc85d42e22
+                stepCounter: fdefaa1c-72fc-4da7-936f-4274fd2ad8ad
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f34a7d40-0d62-4b9a-9fff-65313149f310
+          stepCounter: 4a3ac71f-261b-4ef4-8eec-802bb34ba23f
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: P_CONTAINER
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bc8d8cf5-7138-419a-8194-1c13c35455e9
+                stepCounter: fdefaa1c-72fc-4da7-936f-4274fd2ad8ad
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 09d0bf1d-4234-4947-a7e8-5fc77b69e0ce
+          stepCounter: 4a3ac71f-261b-4ef4-8eec-802bb34ba23f
+        config: {}
+        dataType: NUMBER(12,2)
+        description: ""
+        name: P_RETAILPRICE
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9a0ed613-82c7-4178-8225-7457cbbc0bad
+                stepCounter: fdefaa1c-72fc-4da7-936f-4274fd2ad8ad
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 511b395a-d3e6-4510-8a86-f47aa2f457ad
+          stepCounter: 4a3ac71f-261b-4ef4-8eec-802bb34ba23f
+        config: {}
+        dataType: VARCHAR(23)
+        description: ""
+        name: P_COMMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e09349e6-7401-476a-ba73-c764a8b34030
+                stepCounter: fdefaa1c-72fc-4da7-936f-4274fd2ad8ad
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 89c50209-8e1a-426e-9178-88b2051f9071
+          stepCounter: 4a3ac71f-261b-4ef4-8eec-802bb34ba23f
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+        is_system_ldts: true
+        name: LDTS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: SYSDATE()
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4342b247-4aac-44d5-be06-e64efa953b1a
+          stepCounter: 4a3ac71f-261b-4ef4-8eec-802bb34ba23f
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: The Record Source (RSRC) describes the source of this data.
+        is_system_rsrc: true
+        name: RSRC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "{{record_source()}}"
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          PART: fdefaa1c-72fc-4da7-936f-4274fd2ad8ad
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: PART
+        join:
+          joinCondition: FROM {{ ref('SRC', 'PART') }} "PART"
+        name: DVSTG_PART
+        noLinkRefs: []
+  name: DVSTG_PART
+  overrideSQL: false
+  schema: ""
+  sqlType: datavault:::4
+  type: sql
+  version: 1
+type: Node

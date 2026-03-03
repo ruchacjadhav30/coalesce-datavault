@@ -1,0 +1,197 @@
+fileVersion: 1
+id: 7642c26f-9de5-49f7-9194-fd4dbfa6db07
+name: DVSTG_ORDERS
+operation:
+  config:
+    contains_multiactive_data: false
+    generate_ghost_records: true
+  database: ""
+  deployEnabled: true
+  description: Orders data as defined by TPC-H
+  isMultisource: false
+  locationName: TARGET
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 40211419-3ad1-40a7-a367-44309fa65cf5
+          stepCounter: 7642c26f-9de5-49f7-9194-fd4dbfa6db07
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: O_ORDERKEY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b9ac139f-8128-4a97-a8b7-9db87b64afd3
+                stepCounter: cefa6666-0f03-4091-9712-32c1cf6b555f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6c342d45-163d-46cc-8a10-21c2daf671e9
+          stepCounter: 7642c26f-9de5-49f7-9194-fd4dbfa6db07
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: O_CUSTKEY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1b66da59-7ec5-4f73-a946-f07192539e39
+                stepCounter: cefa6666-0f03-4091-9712-32c1cf6b555f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9817ed6b-0d4c-4e34-b5a4-eae1b3cc50ff
+          stepCounter: 7642c26f-9de5-49f7-9194-fd4dbfa6db07
+        config: {}
+        dataType: VARCHAR(1)
+        description: ""
+        name: O_ORDERSTATUS
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b5aee7c7-1f97-4868-9118-05673f974638
+                stepCounter: cefa6666-0f03-4091-9712-32c1cf6b555f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3129f77f-e79c-40ad-89a0-cc78d95feaaf
+          stepCounter: 7642c26f-9de5-49f7-9194-fd4dbfa6db07
+        config: {}
+        dataType: NUMBER(12,2)
+        description: ""
+        name: O_TOTALPRICE
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0e7cb0f4-fe7c-4d4a-b15b-c2b647e28cb6
+                stepCounter: cefa6666-0f03-4091-9712-32c1cf6b555f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1477d348-d3b6-4b49-a12f-a47a5f77c5b5
+          stepCounter: 7642c26f-9de5-49f7-9194-fd4dbfa6db07
+        config: {}
+        dataType: DATE
+        description: ""
+        name: O_ORDERDATE
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cb7114b6-1049-4d8c-bb88-c108e08b67e0
+                stepCounter: cefa6666-0f03-4091-9712-32c1cf6b555f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0b452fa2-1929-45b4-b9a6-d7af5bd47dc5
+          stepCounter: 7642c26f-9de5-49f7-9194-fd4dbfa6db07
+        config: {}
+        dataType: VARCHAR(15)
+        description: ""
+        name: O_ORDERPRIORITY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bc9b78de-6d12-483c-a7ca-36750f94a8a8
+                stepCounter: cefa6666-0f03-4091-9712-32c1cf6b555f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8515484d-701a-4aba-8b21-1e301a73fb3f
+          stepCounter: 7642c26f-9de5-49f7-9194-fd4dbfa6db07
+        config: {}
+        dataType: VARCHAR(15)
+        description: ""
+        name: O_CLERK
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e8781fec-4e11-469d-b0ae-30498d71db3c
+                stepCounter: cefa6666-0f03-4091-9712-32c1cf6b555f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: be6e6b04-b12a-4343-b5eb-9969c98e0adb
+          stepCounter: 7642c26f-9de5-49f7-9194-fd4dbfa6db07
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: O_SHIPPRIORITY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fabb3afd-c6f1-4d44-a6f6-bae899a8b9fc
+                stepCounter: cefa6666-0f03-4091-9712-32c1cf6b555f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 827a90cc-0389-4751-a56a-29a6ec82b5ba
+          stepCounter: 7642c26f-9de5-49f7-9194-fd4dbfa6db07
+        config: {}
+        dataType: VARCHAR(79)
+        description: ""
+        name: O_COMMENT
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b77fab98-d940-45fd-998c-37a265821156
+                stepCounter: cefa6666-0f03-4091-9712-32c1cf6b555f
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 947d6df8-78bd-435e-91cc-d659e998bd5a
+          stepCounter: 7642c26f-9de5-49f7-9194-fd4dbfa6db07
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: The Load Date Timestamp (LDTS) describes when this data first arrived in the Data Warehouse.
+        is_system_ldts: true
+        name: LDTS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: SYSDATE()
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fc9f2847-127b-4ada-8ef8-0f939fb06dfe
+          stepCounter: 7642c26f-9de5-49f7-9194-fd4dbfa6db07
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: The Record Source (RSRC) describes the source of this data.
+        is_system_rsrc: true
+        name: RSRC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "{{record_source()}}"
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          ORDERS: cefa6666-0f03-4091-9712-32c1cf6b555f
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: ORDERS
+        join:
+          joinCondition: FROM {{ ref('SRC', 'ORDERS') }} "ORDERS"
+        name: DVSTG_ORDERS
+        noLinkRefs: []
+  name: DVSTG_ORDERS
+  overrideSQL: false
+  schema: ""
+  sqlType: datavault:::4
+  type: sql
+  version: 1
+type: Node
